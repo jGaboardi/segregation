@@ -94,11 +94,12 @@ def compute_multiscalar_profile(
         warnings.simplefilter("ignore")
         if network:
             distances = np.array(distances).astype(float)
-            if check_crs:
-                if not gdf.crs.equals(CRS(4326)):
-                    warn(
-                        "GeoDataFrame is in CRS {gdf.crs}. Ensure your network is also stored in this system"
-                    )
+            if check_crs and gdf.crs.equals(CRS(4326)):
+                warn(
+                    "GeoDataFrame is in CRS {gdf.crs}. Ensure your network is also" +
+                    " stored in this system",
+                    stacklevel=2,
+                )
             if precompute:
                 maxdist = max(distances)
                 network.precompute(maxdist)
