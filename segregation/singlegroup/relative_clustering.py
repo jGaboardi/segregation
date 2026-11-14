@@ -23,7 +23,7 @@ def _relative_clustering(data, group_pop_var, total_pop_var, alpha=0.6, beta=0.5
         name of column on dataframe holding population totals for focal group
     total_pop_var : str, required
         name of column on dataframe holding total overall population
-    alpha  : float
+    alpha : float
         A parameter that estimates the extent of the proximity within the same unit.
         Default value is 0.6
     beta : float
@@ -91,7 +91,7 @@ class RelativeClustering(SingleGroupIndex, SpatialExplicitIndex):
         name of column on dataframe holding population totals for focal group
     total_pop_var : str, required
         name of column on dataframe holding total overall population
-    alpha  : float
+    alpha : float
         A parameter that estimates the extent of the proximity within the same unit.
         Default value is 0.6
     beta : float
