@@ -86,7 +86,8 @@ class ConProf(SingleGroupIndex, SpatialImplicitIndex):
     network : pandarm.Network
         pandarm Network object representing the study area
     distance : int
-        Maximum distance (in units of geodataframe CRS) to consider the extent of the egohood
+        Maximum distance (in units of geodataframe CRS)
+        to consider the extent of the egohood
     decay : str
         type of decay function to apply. Options include
     precompute : bool
@@ -101,7 +102,9 @@ class ConProf(SingleGroupIndex, SpatialImplicitIndex):
 
     Notes
     -----
-    Based on Hong, Seong-Yun, and Yukio Sadahiro. "Measuring geographic segregation: a graph-based approach." Journal of Geographical Systems 16.2 (2014): 211-231.
+    Based on Hong, Seong-Yun, and Yukio Sadahiro.
+    "Measuring geographic segregation: a graph-based approach."
+    Journal of Geographical Systems 16.2 (2014): 211-231.
 
     Reference: :cite:`hong2014measuring`.
     """

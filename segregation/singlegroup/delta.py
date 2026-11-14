@@ -78,7 +78,8 @@ class Delta(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of residential segregation." Social forces 67.2 (1988): 281-315.
+    Based on Massey, Douglas S., and Nancy A. Denton.
+    "The dimensions of residential segregation." Social forces 67.2 (1988): 281-315.
 
     Reference: :cite:`massey1988dimensions`.
     """

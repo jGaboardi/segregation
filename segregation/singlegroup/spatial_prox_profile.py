@@ -100,8 +100,9 @@ class SpatialProxProf(SingleGroupIndex, SpatialExplicitIndex):
         name of column on dataframe holding population totals for focal group
     total_pop_var : str, required
         name of column on dataframe holding total overall population
-    w: libpysal.weights.W
-        pysal spatial weights object measuring connectivity between geographic units. If nNne, a Queen object will be created
+    w : libpysal.weights.W
+        pysal spatial weights object measuring connectivity between geographic units.
+        If None, a Queen object will be created
     m : int
         a numeric value indicating the number of thresholds to be used. Default value is 1000.
         A large value of m creates a smoother-looking graph and a more precise spatial proximity
@@ -116,7 +117,8 @@ class SpatialProxProf(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    Based on Hong, Seong-Yun, and Yukio Sadahiro. "Measuring geographic segregation: a graph-based approach." Journal of Geographical Systems 16.2 (2014): 211-231.
+    Based on Hong, Seong-Yun, and Yukio Sadahiro. "Measuring geographic segregation:
+    a graph-based approach." Journal of Geographical Systems 16.2 (2014): 211-231.
 
     Reference: :cite:`hong2014measuring`.
     """

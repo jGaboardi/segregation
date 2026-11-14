@@ -193,9 +193,11 @@ class RelativeCentralization(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of residential segregation." Social forces 67.2 (1988): 281-315.
+    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of
+    residential segregation." Social forces 67.2 (1988): 281-315.
 
-    A discussion of defining the center in this function can be found in https://github.com/pysal/segregation/issues/18.
+    A discussion of defining the center in this function can be found
+    in https://github.com/pysal/segregation/issues/18.
 
     Reference: :cite:`massey1988dimensions`.
     """

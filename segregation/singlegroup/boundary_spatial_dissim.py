@@ -97,9 +97,11 @@ class BoundarySpatialDissim(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    The formula is based on Hong, Seong-Yun, David O'Sullivan, and Yukio Sadahiro. "Implementing spatial segregation measures in R." PloS one 9.11 (2014): e113767.
+    The formula is based on Hong, Seong-Yun, David O'Sullivan, and Yukio Sadahiro.
+    "Implementing spatial segregation measures in R." PloS one 9.11 (2014): e113767.
 
-    Original paper by Wong, David WS. "Spatial indices of segregation." Urban studies 30.3 (1993): 559-572.
+    Original paper by Wong, David WS. "Spatial indices of segregation."
+    Urban studies 30.3 (1993): 559-572.
 
     References: :cite:`hong2014implementing` and :cite:`wong1993spatial`.
     """

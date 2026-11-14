@@ -38,14 +38,18 @@ def _perimeter_area_ratio_spatial_dissim(
 
     Notes
     -----
-    Originally based on Wong, David WS. "Spatial indices of segregation." Urban studies 30.3 (1993): 559-572.
+    Originally based on Wong, David WS. "Spatial indices of segregation."
+    Urban studies 30.3 (1993): 559-572.
 
-    However, Tivadar, Mihai. "OasisR: An R Package to Bring Some Order to the World of Segregation Measurement." Journal of Statistical Software 89.1 (2019): 1-39.
-    points out that in Wong’s original there is an issue with the formula which is an extra division by 2 in the spatial interaction component.
-    This function follows the formula present in the first Appendix of Tivadar, Mihai. "OasisR: An R Package to Bring Some Order to the World of Segregation Measurement." Journal of Statistical Software 89.1 (2019): 1-39.
+    However, Tivadar, Mihai. "OasisR: An R Package to Bring Some Order to the World
+    of Segregation Measurement." Journal of Statistical Software 89.1 (2019): 1-39.
+    points out that in Wong’s original there is an issue with the formula which is
+    an extra division by 2 in the spatial interaction component. This function follows
+    the formula present in the first Appendix of Tivadar, Mihai. "OasisR: An R Package
+    to Bring Some Order to the World of Segregation Measurement."
+    Journal of Statistical Software 89.1 (2019): 1-39.
 
     References: :cite:`wong1993spatial` and :cite:`tivadar2019oasisr`.
-
     """
     if type(standardize) is not bool:
         raise TypeError("std is not a boolean object")
@@ -100,8 +104,10 @@ class PARDissim(SingleGroupIndex, SpatialExplicitIndex):
     total_pop_var : str, required
         name of column on dataframe holding total overall population
     standardize : boolean
-        A condition for row standardisation of the weights matrices. If True, the values of cij in the formulas gets row standardized.
-        For the sake of comparison, the seg R package of Hong, Seong-Yun, David O'Sullivan, and Yukio Sadahiro. "Implementing spatial segregation measures in R." PloS one 9.11 (2014): e113767.
+        A condition for row standardisation of the weights matrices. If True, the
+        values of cij in the formulas gets row standardized. For the sake of comparison,
+        the seg R package of Hong, Seong-Yun, David O'Sullivan, and Yukio Sadahiro.
+        "Implementing spatial segregation measures in R." PloS one 9.11 (2014): e113767.
         works by default with row standardization.
 
     Attributes
@@ -113,11 +119,16 @@ class PARDissim(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    Originally based on Wong, David WS. "Spatial indices of segregation." Urban studies 30.3 (1993): 559-572.
+    Originally based on Wong, David WS. "Spatial indices of segregation."
+    Urban studies 30.3 (1993): 559-572.
 
-    However, Tivadar, Mihai. "OasisR: An R Package to Bring Some Order to the World of Segregation Measurement." Journal of Statistical Software 89.1 (2019): 1-39.
-    points out that in Wong’s original there is an issue with the formula which is an extra division by 2 in the spatial interaction component.
-    This function follows the formula present in the first Appendix of Tivadar, Mihai. "OasisR: An R Package to Bring Some Order to the World of Segregation Measurement." Journal of Statistical Software 89.1 (2019): 1-39.
+    However, Tivadar, Mihai. "OasisR: An R Package to Bring Some Order to the World
+    of Segregation Measurement." Journal of Statistical Software 89.1 (2019): 1-39.
+    points out that in Wong’s original there is an issue with the formula which is
+    an extra division by 2 in the spatial interaction component. This function follows
+    the formula present in the first Appendix of Tivadar, Mihai. "OasisR: An R Package
+    to Bring Some Order to the World of Segregation Measurement."
+    Journal of Statistical Software 89.1 (2019): 1-39.
 
     References: :cite:`wong1993spatial` and :cite:`tivadar2019oasisr`.
     """

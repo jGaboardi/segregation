@@ -112,7 +112,8 @@ class SpatialDissim(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    Based on Morrill, R. L. (1991) "On the Measure of Geographic Segregation". Geography Research Forum.
+    Based on Morrill, R. L. (1991) "On the Measure of Geographic Segregation".
+    Geography Research Forum.
 
     Reference: :cite:`morrill1991measure`.
     """

@@ -83,7 +83,8 @@ class Atkinson(SingleGroupIndex, SpatialImplicitIndex):
     network : pandarm.Network
         pandarm Network object representing the study area
     distance : int
-        Maximum distance (in units of geodataframe CRS) to consider the extent of the egohood
+        Maximum distance (in units of geodataframe CRS)
+        to consider the extent of the egohood
     decay : str
         type of decay function to apply. Options include
     precompute : bool
@@ -98,7 +99,8 @@ class Atkinson(SingleGroupIndex, SpatialImplicitIndex):
 
     Notes
     -----
-    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of residential segregation." Social forces 67.2 (1988): 281-315.
+    Based on Massey, Douglas S., and Nancy A. Denton.
+    "The dimensions of residential segregation." Social forces 67.2 (1988): 281-315.
 
     Reference: :cite:`massey1988dimensions`.
     """

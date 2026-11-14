@@ -105,7 +105,8 @@ class BiasCorrectedDissim(SingleGroupIndex, SpatialImplicitIndex):
     network : pandarm.Network
         pandarm Network object representing the study area
     distance : int
-        Maximum distance (in units of geodataframe CRS) to consider the extent of the egohood
+        Maximum distance (in units of geodataframe CRS)
+        to consider the extent of the egohood
     decay : str
         type of decay function to apply. Options include
     precompute : bool
@@ -120,7 +121,9 @@ class BiasCorrectedDissim(SingleGroupIndex, SpatialImplicitIndex):
 
     Notes
     -----
-    Based on Carrington, William J., and Kenneth R. Troske. "On measuring segregation in samples with small units." Journal of Business & Economic Statistics 15.4 (1997): 402-409.
+    Based on Carrington, William J., and Kenneth R. Troske.
+    "On measuring segregation in samples with small units."
+    Journal of Business & Economic Statistics 15.4 (1997): 402-409.
 
     Reference: :cite:`carrington1997measuring`.
     """

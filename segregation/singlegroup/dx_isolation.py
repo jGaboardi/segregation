@@ -104,9 +104,11 @@ class DistanceDecayIsolation(SingleGroupIndex, SpatialExplicitIndex):
 
     Notes
     -----
-    It may be interpreted as the probability that the next person a group member meets anywhere in space is from the same group.
+    It may be interpreted as the probability that the next person a group member
+    meets anywhere in space is from the same group.
 
-    Based on Morgan, Barrie S. "A distance-decay based interaction index to measure residential segregation." Area (1983): 211-217.
+    Based on Morgan, Barrie S. "A distance-decay based interaction index to
+    measure residential segregation." Area (1983): 211-217.
 
     The pairwise distance between unit i and itself is (alpha * area_of_unit_i) ^ beta.
 

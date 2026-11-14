@@ -79,7 +79,8 @@ class MinMax(SingleGroupIndex, SpatialImplicitIndex):
     network : pandarm.Network
         pandarm Network object representing the study area
     distance : int
-        Maximum distance (in units of geodataframe CRS) to consider the extent of the egohood
+        Maximum distance (in units of geodataframe CRS)
+        to consider the extent of the egohood
     decay : str
         type of decay function to apply. Options include
     precompute : bool
@@ -94,8 +95,9 @@ class MinMax(SingleGroupIndex, SpatialImplicitIndex):
 
     Notes
     -----
-    Based on O'Sullivan & Wong (2007). A Surface‐Based Approach to Measuring Spatial Segregation.
-    Geographical Analysis 39 (2). https://doi.org/10.1111/j.1538-4632.2007.00699.x
+    Based on O'Sullivan & Wong (2007). A Surface‐Based Approach to
+    Measuring Spatial Segregation. Geographical Analysis 39 (2).
+    https://doi.org/10.1111/j.1538-4632.2007.00699.x
 
     Reference: :cite:`osullivanwong2007surface`.
 

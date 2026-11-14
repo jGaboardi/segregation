@@ -105,7 +105,8 @@ class DensityCorrectedDissim(SingleGroupIndex, SpatialImplicitIndex):
     network : pandarm.Network
         pandarm Network object representing the study area
     distance : int
-        Maximum distance (in units of geodataframe CRS) to consider the extent of the egohood
+        Maximum distance (in units of geodataframe CRS)
+        to consider the extent of the egohood
     decay : str
         type of decay function to apply. Options include
     precompute : bool
@@ -120,7 +121,8 @@ class DensityCorrectedDissim(SingleGroupIndex, SpatialImplicitIndex):
 
     Notes
     -----
-    Based on Allen, Rebecca, et al. "More reliable inference for the dissimilarity index of segregation." The econometrics journal 18.1 (2015): 40-66.
+    Based on Allen, Rebecca, et al. "More reliable inference for the dissimilarity
+    index of segregation." The econometrics journal 18.1 (2015): 40-66.
 
     Reference: :cite:`allen2015more`.
     """
