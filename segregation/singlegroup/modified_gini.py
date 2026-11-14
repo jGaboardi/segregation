@@ -32,12 +32,13 @@ def _modified_gini(
     ----------
     data : pandas.DataFrame or geopandas.GeoDataFrame
         Dataframe or geodataframe if spatial index holding data for location of interest
-    group_pop_var : string
+    group_pop_var : str
         Variable containing the population count of the group of interest
-    total_pop_var : string
+    total_pop_var : str
         Variable in data that contains the total population count of the unit
     iterations : int
-        The number of iterations the evaluate average classic dissimilarity under eveness.
+        The number of iterations the evaluate average
+        classic dissimilarity under eveness.
         Default value is 500.
     n_jobs : int
         [Optional. Default=-1] Number of processes to run in parallel. If -1,
@@ -58,14 +59,15 @@ def _modified_gini(
 
     Notes
     -----
-    Based on Carrington, William J., and Kenneth R. Troske. "On measuring segregation in samples with small units." Journal of Business & Economic Statistics 15.4 (1997): 402-409.
+    Based on Carrington, William J., and Kenneth R. Troske. ######################################## GH#319
+    "On measuring segregation in samples with small units."
+    Journal of Business & Economic Statistics 15.4 (1997): 402-409.
 
     Reference: :cite:`carrington1997measuring`.
     """
     if not seed:
-        seed = np.random.randint(
-            0, 10e6
-        )  # is there a better practice for this? I think joblib will fail if None passed
+        # is there a better practice for this? I think joblib will fail if None passed
+        seed = np.random.randint(0, 10e6)
     if n_jobs == -1:
         n_jobs = multiprocessing.cpu_count()
 
@@ -156,12 +158,12 @@ class ModifiedGini(SingleGroupIndex, SpatialImplicitIndex):
     ----------
     statistic : float
         Modified Gini Index
-    core_data : a pandas DataFrame
+    core_data : pandas.DataFrame
         A pandas DataFrame that contains the columns used to perform the estimate.
 
     Notes
     -----
-    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of
+    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of  ######################################## GH#319
     residential segregation." Social forces 67.2 (1988): 281-315.
 
     Reference: :cite:`massey1988dimensions`.

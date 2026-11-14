@@ -35,7 +35,8 @@ def _modified_dissim(
     total_pop_var : string
         Variable in data that contains the total population count of the unit
     iterations : int
-        The number of iterations the evaluate average classic dissimilarity under eveness.
+        The number of iterations the evaluate average
+        classic dissimilarity under eveness.
         Default value is 500.
     n_jobs : int
         [Optional. Default=-1] Number of processes to run in parallel. If -1,
@@ -55,10 +56,11 @@ def _modified_dissim(
 
     Notes
     -----
-    Based on Carrington, William J., and Kenneth R. Troske. "On measuring segregation in samples with small units." Journal of Business & Economic Statistics 15.4 (1997): 402-409.
+    Based on Carrington, William J., and Kenneth R. Troske. ######################################## GH#319
+    "On measuring segregation in samples with small units."
+    Journal of Business & Economic Statistics 15.4 (1997): 402-409.
 
     Reference: :cite:`carrington1997measuring`.
-
     """
     if not seed:
         seed = np.random.randint(
@@ -83,8 +85,9 @@ def _modified_dissim(
         data = i[0].copy()
         p = i[1]
         np.random.seed(i[2])
-        # generate synthetic population by drawing from a binomial distribution in each unit
-        # with n_draws == the total population and P(group_pop)= the total regional proportion
+        # generate synthetic population by drawing from a binomial distribution
+        # in each unit with n_draws == the total population and
+        # P(group_pop)= the total regional proportion
         freq_sim = np.random.binomial(
             n=data[total_pop_var].astype(int).values,
             p=p,
@@ -148,13 +151,13 @@ class ModifiedDissim(SingleGroupIndex, SpatialImplicitIndex):
     Attributes
     ----------
     statistic : float
-                Modified Dissim Index
-    core_data : a pandas DataFrame
-                A pandas DataFrame that contains the columns used to perform the estimate.
+        Modified Dissim Index
+    core_data : pandas.DataFrame
+        A pandas DataFrame that contains the columns used to perform the estimate.
 
     Notes
     -----
-    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of
+    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of  ######################################## GH#319
     residential segregation." Social forces 67.2 (1988): 281-315.
 
     Reference: :cite:`massey1988dimensions`.
