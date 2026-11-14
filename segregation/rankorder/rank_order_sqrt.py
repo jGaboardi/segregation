@@ -77,7 +77,8 @@ class RankOrderSqrt(RankOrderIndex, SpatialImplicitIndex):
     network : pandarm.Network
         pandarm Network object representing the study area
     distance : int
-        Maximum distance (in units of geodataframe CRS) to consider the extent of the egohood
+        Maximum distance (in units of geodataframe CRS)
+        to consider the extent of the egohood
     decay : str
         type of decay function to apply. Options include
     precompute : bool
@@ -143,7 +144,6 @@ class RankOrderSqrt(RankOrderIndex, SpatialImplicitIndex):
         decay="linear",
         function="triangular",
         precompute=False,
-        **kwargs,
     ):
         """Init."""
         RankOrderIndex.__init__(self, data, groups)
