@@ -26,7 +26,8 @@ def _absolute_centralization(
         the population size of the group of interest
     total_pop_var : str
         The name of variable in data that contains the total population of the unit
-    center : str, two-dimension values (tuple, list, array) or integer.
+    center : str
+        Two-dimension values (tuple, list, array) or integer.
         This defines what is considered to be the center of the spatial
         context under study. If string, this can be set to:
             "mean" - the center longitude/latitude is the mean of
@@ -187,7 +188,8 @@ class AbsoluteCentralization(SingleGroupIndex, SpatialExplicitIndex):
         name of column on dataframe holding population totals for focal group
     total_pop_var : str, required
         name of column on dataframe holding total overall population
-    center : str, two-dimension values (tuple, list, array) or integer.
+    center : str
+        Two-dimension values (tuple, list, array) or integer.
         This defines what is considered to be the center of the spatial
         context under study. If string, this can be set to:
             "mean" - the center longitude/latitude is the mean of

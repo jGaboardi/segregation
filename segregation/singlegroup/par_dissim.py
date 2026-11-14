@@ -20,21 +20,23 @@ def _perimeter_area_ratio_spatial_dissim(
 
     Parameters
     ----------
-    data          : a geopandas DataFrame with a geometry column.
-    group_pop_var : string
-                    The name of variable in data that contains the population size of the group of interest
-    total_pop_var : string
-                    The name of variable in data that contains the total population of the unit
-    standardize   : boolean
-                    A condition for standardisation of the weights matrices.
-                    If True, the values of cij in the formulas gets standardized and the overall sum is 1.
+    data : geopandas.GeoDataFrame
+        A geopandas DataFrame with a geometry column.
+    group_pop_var : str
+        The name of variable in data that contains
+        the population size of the group of interest
+    total_pop_var : str
+        The name of variable in data that contains the total population of the unit
+    standardize : bool
+        A condition for standardisation of the weights matrices. If True, the
+        values of cij in the formulas gets standardized and the overall sum is 1.
 
     Returns
     ----------
     statistic : float
-                Perimeter/Area Ratio Spatial Dissimilarity Index
-    core_data : a geopandas DataFrame
-                A geopandas DataFrame that contains the columns used to perform the estimate.
+        Perimeter/Area Ratio Spatial Dissimilarity Index
+    core_data : geopandas.GeoDataFrame
+        A geopandas DataFrame that contains the columns used to perform the estimate.
 
     Notes
     -----
@@ -103,7 +105,7 @@ class PARDissim(SingleGroupIndex, SpatialExplicitIndex):
         name of column on dataframe holding population totals for focal group
     total_pop_var : str, required
         name of column on dataframe holding total overall population
-    standardize : boolean
+    standardize : bool
         A condition for row standardisation of the weights matrices. If True, the
         values of cij in the formulas gets row standardized. For the sake of comparison,
         the seg R package of Hong, Seong-Yun, David O'Sullivan, and Yukio Sadahiro.
@@ -114,7 +116,7 @@ class PARDissim(SingleGroupIndex, SpatialExplicitIndex):
     ----------
     statistic : float
         PARDissim Index
-    core_data : a pandas DataFrame
+    core_data : pandas.DataFrame
         A pandas DataFrame that contains the columns used to perform the estimate.
 
     Notes
