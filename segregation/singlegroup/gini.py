@@ -79,9 +79,9 @@ def _gini_seg(data, group_pop_var, total_pop_var):
     ----------
     data : pandas.DataFrame or geopandas.GeoDataFrame
         Dataframe or geodataframe if spatial index holding data for location of interest
-    group_pop_var : string
+    group_pop_var : str
         Variable containing the population count of the group of interest
-    total_pop_var : string
+    total_pop_var : str
         Variable in data that contains the total population count of the unit
 
     Returns
@@ -146,9 +146,9 @@ class Gini(SingleGroupIndex, SpatialImplicitIndex):
     Attributes
     ----------
     statistic : float
-                Gini Index
-    core_data : a pandas DataFrame
-                A pandas DataFrame that contains the columns used to perform the estimate.
+        Gini Index
+    core_data : pandas.DataFrame
+        A pandas DataFrame that contains the columns used to perform the estimate.
 
     Notes
     -----
