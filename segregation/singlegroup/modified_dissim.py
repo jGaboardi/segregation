@@ -56,7 +56,7 @@ def _modified_dissim(
 
     Notes
     -----
-    Based on Carrington, William J., and Kenneth R. Troske. ######################################## GH#319
+    Based on Carrington, William J., and Kenneth R. Troske.
     "On measuring segregation in samples with small units."
     Journal of Business & Economic Statistics 15.4 (1997): 402-409.
 
@@ -157,10 +157,11 @@ class ModifiedDissim(SingleGroupIndex, SpatialImplicitIndex):
 
     Notes
     -----
-    Based on Massey, Douglas S., and Nancy A. Denton. "The dimensions of  ######################################## GH#319
-    residential segregation." Social forces 67.2 (1988): 281-315.
+    Based on Carrington, William J., and Kenneth R. Troske.
+    "On measuring segregation in samples with small units."
+    Journal of Business & Economic Statistics 15.4 (1997): 402-409.
 
-    Reference: :cite:`massey1988dimensions`.
+    Reference: :cite:`carrington1997measuring`.
     """
 
     def __init__(
