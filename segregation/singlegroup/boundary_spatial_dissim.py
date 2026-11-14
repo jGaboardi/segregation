@@ -29,8 +29,8 @@ def _boundary_spatial_dissim(data, group_pop_var, total_pop_var, standardize=Fal
         A condition for row standardisation of the weights matrices.
         If True, the values of cij in the formulas gets row standardized.
         For the sake of comparison, the seg R package of Hong, Seong-Yun
-         David O'Sullivan, and Yukio Sadahiro. "Implementing spatial segregation
-         measures in R." PloS one 9.11 (2014): e113767.
+        David O'Sullivan, and Yukio Sadahiro. "Implementing spatial segregation
+        measures in R." PloS one 9.11 (2014): e113767.
         works by default without row standardization.
         That is, directly with border length.
 
@@ -94,8 +94,8 @@ class BoundarySpatialDissim(SingleGroupIndex, SpatialExplicitIndex):
         A condition for row standardisation of the weights matrices.
         If True, the values of cij in the formulas gets row standardized.
         For the sake of comparison, the seg R package of Hong, Seong-Yun
-         David O'Sullivan, and Yukio Sadahiro. "Implementing spatial segregation
-         measures in R." PloS one 9.11 (2014): e113767.
+        David O'Sullivan, and Yukio Sadahiro. "Implementing spatial segregation
+        measures in R." PloS one 9.11 (2014): e113767.
         works by default without row standardization.
 
     Attributes
